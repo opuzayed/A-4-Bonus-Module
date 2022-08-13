@@ -28,8 +28,14 @@ let result = factorial(5);
 console.log(result); */
 //----------------array------------
 const numbers = [10, 11, 12, 14, 16];
-for(let i=0; i<numbers.length; i++)
+/* for(let i=0; i<numbers.length; i++)
 {
     const number = numbers[i];
     console.log(number);
+} */
+//---------------------or(using forofloop)--------------------
+for(const number of numbers)
+{
+    console.log(number);
 }
+
