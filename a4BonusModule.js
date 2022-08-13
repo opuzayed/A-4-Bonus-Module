@@ -16,7 +16,7 @@ for(let i=5; i>=1; i--)
 }
 console.log(factorial); */
 //----------factorial using recurssion----------
-function factorial(i)
+/* function factorial(i)
 {
     if(i == 1)
     {
@@ -25,4 +25,11 @@ function factorial(i)
     return i * factorial(i-1);
 }
 let result = factorial(5);
-console.log(result);
+console.log(result); */
+//----------------array------------
+const numbers = [10, 11, 12, 14, 16];
+for(let i=0; i<numbers.length; i++)
+{
+    const number = numbers[i];
+    console.log(number);
+}
