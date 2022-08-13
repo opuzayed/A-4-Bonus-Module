@@ -39,13 +39,31 @@ const numbers = [10, 11, 12, 14, 16];
     console.log(number);
 } */
 const products = [
-  { id: 101, name : "oppo", price : 10000 },
-  { id: 102, name : "microsoft", price : 11000 },
-  { id: 101, name : "xaome", price : 12000 },
-  { id: 101, name : "realme", price : 13000 },
-  { id: 101, name : "walton", price : 14000 }
+  { id: 101, name : "oppo phone", price : 10000 },
+  { id: 102, name : "microsoft laptop", price : 11000 },
+  { id: 103, name : "xaome phone", price : 12000 },
+  { id: 104, name : "realme laptop", price : 13000 },
+  { id: 106, name : "walton phone", price : 14000 },
+  { id: 107, name : "walton phones", price : 14000 },
+  { id: 108, name : "walton LAPTOP", price : 14000 },
+  { id: 109, name : "walton phone", price : 14000 },
+  { id: 110, name : "walton phone", price : 14000 }
 ];
-for(const product of products)
+/* for(const product of products)
 {
     console.log(product);
+} */
+function matchedProducts(products, search)
+{
+    const matched = [];
+    for(const product of products)
+    {
+        if(product.name.toLowerCase().includes(search.toLowerCase()))
+        {
+            matched.push(product);
+        }
+    }
+    return matched;
 }
+const result = matchedProducts(products, 'laptop');
+console.log(result);
