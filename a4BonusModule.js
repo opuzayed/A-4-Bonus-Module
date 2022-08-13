@@ -34,8 +34,18 @@ const numbers = [10, 11, 12, 14, 16];
     console.log(number);
 } */
 //---------------------or(using forofloop)--------------------
-for(const number of numbers)
+/* for(const number of numbers)
 {
     console.log(number);
+} */
+const products = [
+  { id: 101, name : "oppo", price : 10000 },
+  { id: 102, name : "microsoft", price : 11000 },
+  { id: 101, name : "xaome", price : 12000 },
+  { id: 101, name : "realme", price : 13000 },
+  { id: 101, name : "walton", price : 14000 }
+];
+for(const product of products)
+{
+    console.log(product);
 }
-
